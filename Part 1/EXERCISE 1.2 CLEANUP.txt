@@ -1,0 +1,5 @@
+root@hp-hp250g4notebookpc:~# docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+root@hp-hp250g4notebookpc:~# docker image ls
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+root@hp-hp250g4notebookpc:~# 

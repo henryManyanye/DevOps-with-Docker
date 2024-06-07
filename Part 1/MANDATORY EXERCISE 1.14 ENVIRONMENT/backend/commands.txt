@@ -1,0 +1,4 @@
+sudo docker build . -t go
+
+sudo docker run --name GO -it -p 8080:8080 go
+

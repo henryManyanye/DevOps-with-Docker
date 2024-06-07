@@ -1,0 +1,5 @@
+root@hp-hp250g4notebookpc:~# docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS                          PORTS     NAMES
+f56fc5072a4d   nginx     "/docker-entrypoint.…"   3 minutes ago   Exited (0) 2 minutes ago                  zealous_elgamal
+69e36c7aedc5   nginx     "/docker-entrypoint.…"   3 minutes ago   Exited (0) About a minute ago             focused_germain
+786920b02a9a   nginx     "/docker-entrypoint.…"   4 minutes ago   Up 4 minutes                    80/tcp    suspicious_benz

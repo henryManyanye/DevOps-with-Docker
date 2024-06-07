@@ -1,0 +1,30 @@
+root@hp-hp250g4notebookpc:~# docker image pull devopsdockeruh/simple-web-service:alpine
+alpine: Pulling from devopsdockeruh/simple-web-service
+ba3557a56b15: Pull complete 
+1dace236434b: Pull complete 
+4f4fb700ef54: Pull complete 
+Digest: sha256:dd4d367476f86b7d7579d3379fe446ae5dfce25480903fb0966fc2e5257e0543
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:alpine
+docker.io/devopsdockeruh/simple-web-service:alpine
+root@hp-hp250g4notebookpc:~# docker image ls
+REPOSITORY                          TAG       IMAGE ID       CREATED       SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   3 years ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   3 years ago   15.7MB
+
+root@hp-hp250g4notebookpc:~# docker run -d -it --name webService  devopsdockeruh/simple-web-service:alpine
+8bd0626c7e4f7dc22bf16e38c2ae3b11ca3c3a1d70ff50b50bfd9b7be5de3776
+root@hp-hp250g4notebookpc:~# docker exec webService tail -f ./text.log
+2024-06-06 12:57:13 +0000 UTC
+2024-06-06 12:57:15 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-06-06 12:57:17 +0000 UTC
+2024-06-06 12:57:19 +0000 UTC
+2024-06-06 12:57:21 +0000 UTC
+2024-06-06 12:57:23 +0000 UTC
+2024-06-06 12:57:25 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-06-06 12:57:27 +0000 UTC
+2024-06-06 12:57:29 +0000 UTC
+2024-06-06 12:57:31 +0000 UTC
+^C
+root@hp-hp250g4notebookpc:~# 
